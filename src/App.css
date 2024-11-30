@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+
+
+/* 
+font-family: "Inter", sans-serif;
+primary color: #041413,
+secondary color: #F4F4F4
+*/
+
+body{   
+    font-family: "Host Grotesk", sans-serif;
+    background: #F4F4F4;
+    font-size: 18px;
+}
+/* Home page */
+.Home_div{
+    width: 100%;
+    display:flex;
+    height: auto;
+}
+
+.title_action_btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 20%;
+    height: 100vh;
+    border-right: .8px solid #B3C8CF;
+    padding: 10px;
+
+}
+.title h2{
+    font-size: 1.4rem;
+    color:#F5004F;
+}
+#action-btn{
+    background: #272121;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    cursor: pointer;
+    font-family: "Host Grotesk", sans-serif;
+    font-size: .9rem;
+    border:none;
+}
+.Form_popup, .Edit_Password_form{
+    position: fixed;
+    top: -25px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+/* form */
+.form_content{
+    border: 1px solid #1C2C4C;
+    color: rgb(225, 225, 225);
+    width: 420px;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 1rem;
+}
+.form_header h2{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.form_content p{
+    font-size: .9rem;
+    color: #6D6C6C;
+    font-weight: 400;
+    margin-top: -5px;
+}
+
+.form_inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.password_name, .password{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;;
+}
+
+input{
+    padding: 10px;
+    font-size: .8rem;
+    font-family: "Inter", sans-serif;
+    border: .8px solid #1C2C4C;
+    background: none;
+    border-radius: 5px;
+    color:#F4F4F4;
+    width: 400px;
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    opacity: 1;
+}
+input:focus::placeholder{
+    opacity: 0;
+}
+
+label{
+    font-size: .8rem;
+}
+.form_button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    margin-top: 10px;;
+}
+#save_btn{
+    width: 420px;
+    padding: 10px;
+    background: #0c1421;
+    border-radius: 5px;
+    color: #F4F4F4;
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: "Host Grotesk", sans-serif;
+    cursor: pointer;
+}
+#cancel_btn{
+    width: 420px;
+    padding: 10px;
+    font-family: "Host Grotesk", sans-serif;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+}
+/* success popup*/
+.SuccessPopup{
+    width: 330px;
+    background-color: white;
+    color: #0c1421;
+    padding: 6px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 8px;
+}
+.successLogo{
+    object-fit: cover;
+    width: 30px;
+}
+.successText p{
+    padding: 0;
+    font-size:1rem;
+}
+/* password list */
+.PasswordList{
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+#Header{
+    font-size: 1.2rem;
+    text-align: start;
+    font-weight: 800;
+}
+.Header_phrase{
+    margin-top: -12px;
+    font-size: .91rem;
+    color: #6D6C6C;
+}
+.Password-container-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+}
+.Name_toggle-btn{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    border: .9px solid #B3C8CF;
+    border-radius: 5px;
+    gap: 20px;
+    padding: 5px 10px;
+}
+.action_btns{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color:#6D6C6C;
+    cursor: pointer;
+    display:none;
+}
+
+.Password-container-list p{
+    font-size: .8rem;
+    color: #0c1421;
+    padding: 0;
+}
+.password_field{
+    width: auto;
+    border:none;
+    color: #0c1421;
+}
+.btn{
+    cursor: pointer;
+}
+/* details data */
+.details_data{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    border: .5px solid #B346FF;
+}
+.details_data p{
+    color: black;
+    border-radius: 5px;
+    font-size: .9rem;
+}
+.Action_btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* action-btn */
+.Edit, .Copy, .Remove{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+.Edit_Password_form h1{
+    color:#F4F4F4;
+}
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+    .Home_div{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .title_action_btn{
+        width: auto;
+        height: auto;
+        justify-content: space-between;
+        flex-direction: row;
+        border-bottom: .5px solid #B3C8CF;
+        border-right: 0;
+        margin: 0;
+    }
+    .title h2{
+        font-size: 20px;
+    }
+    #action-btn{
+        gap: 5px;
+    }
+    .form_content{
+        width: 325px;
+        height: auto;
+        padding: 20px;
+    }
+    .form_header h2{
+        font-size: 1rem;
+    }
+    input{
+        width: 300px;
+        padding: 12px;
+    }
+    .form_button{
+        flex-direction: row-reverse;
+    }
+    #save_btn, #cancel_btn{
+        width: auto;
+    }
+    #save_btn{
+        padding: 12px;
+    }
+    /* password list */
+    .PasswordList{
+        width: 100%;
+        padding: 0;
+        gap: 20px;
+    }
+    .Password_Name p{
+        font-size: 16px;
+    }
+    .password_field{
+        width: 100%;
+    }
+    /* details data */
+    .details_data{
+        padding: 5px 10px;
+        width: auto;
+        justify-content: space-around;
+    }
+    .details_data p{
+        width: 100%;;
+    }
+}

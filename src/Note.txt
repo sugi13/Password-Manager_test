@@ -1,0 +1,21 @@
+The Password Manager Motive:
+
+- CRUD passwords:
+- Decrypt and Encrypt the passwords: ✅
+Add Select with usual apps and add custom options to it.
+The list should differentiate the username and password
+
+// const decrypted = CryptoJS.AES.decrypt(encrypted, SECRET_KEY).toString(CryptoJS.enc.Utf8);
+ return JSON.parse(decrypted);
+
+ setTimeout(() => {
+      closeForm(false);
+    }, 2000)          
+
+
+     <div className="action_btns">
+              {Password.isShown ? <EyeSlashed className="btn" size={18} onClick={() => ToggleVisibility(Password.id)}/>: <EyeOpen className="btn" size={18} onClick={() => ToggleVisibility(Password.id)} /> }
+              <Copy size={18} className="btn" />
+              <Edit size={18} className="btn" />
+              <Backspace size={18} className="btn" />
+            </div>
