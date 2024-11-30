@@ -286,7 +286,8 @@ label{
     }
     input{
         width: 300px;
-        padding: 12px;
+        padding: 15px;
+        font-size: 1rem;
     }
     .form_button{
         flex-direction: row-reverse;
@@ -300,8 +301,14 @@ label{
     /* password list */
     .PasswordList{
         width: 100%;
-        padding: 0;
         gap: 20px;
+        padding: 0;
+    }
+    #Header{
+        font-size: 20px;
+    }
+    .Header_phrase{
+        margin-top: -20px;
     }
     .Password_Name p{
         font-size: 16px;
@@ -309,13 +316,20 @@ label{
     .password_field{
         width: 100%;
     }
+    .Name_toggle-btn{
+        border: .5px solid #e4c7f9;
+    }
     /* details data */
     .details_data{
         padding: 5px 10px;
         width: auto;
         justify-content: space-around;
+        border: .9px solid #B3C8CF;
     }
     .details_data p{
         width: 100%;;
+    }
+    .btn{
+        --size: 100px;
     }
 }
